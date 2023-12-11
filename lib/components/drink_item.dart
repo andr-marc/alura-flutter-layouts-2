@@ -20,13 +20,13 @@ class DrinkItem extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Image(
-            height: 120,
+            height: 90,
             width: double.infinity,
             image: AssetImage(imageURI),
             fit: BoxFit.cover,
           ),
           Padding(
-            padding: const EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(8.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
@@ -34,7 +34,7 @@ class DrinkItem extends StatelessWidget {
                   itemTitle,
                   style: const TextStyle(fontSize: 16),
                 ),
-                Text("R\$ " + itemPrice),
+                Text("R\$ $itemPrice"),
               ],
             ),
           ),
